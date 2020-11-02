@@ -11,7 +11,10 @@
     "e2e:build:ios": "detox build --configuration ios.sim.debug",
     "e2e:test:ios": "detox test --configuration ios.sim.debug",
     "check-types": "tsc --noEmit",
-    "validate": "yarn check-types lint"
+    "prettier": "prettier --ignore-path .gitignore \"index.tsx\" \"src/**/*.+(js|json|ts|tsx)\"",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --check",
+    "validate": "yarn check-format check-types lint"
   },
   "dependencies": {
     "react": "16.13.1",
@@ -20,6 +23,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
+    "@patwoz/prettier-config": "^1.1.0",
     "@react-native-community/eslint-config": "^1.1.0",
     "@types/detox": "^16.4.1",
     "@types/jest": "^26.0.15",
@@ -38,5 +42,6 @@
     "react-test-renderer": "16.13.1",
     "ts-jest": "^26.4.3",
     "typescript": "^4.0.5"
-  }
+  },
+  "prettier": "@patwoz/prettier-config"
 }

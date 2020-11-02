@@ -1145,6 +1145,11 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
+"@patwoz/prettier-config@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@patwoz/prettier-config/-/prettier-config-1.1.0.tgz#a726dd801fddd319c452495dff2d65d26c3cbbdc"
+  integrity sha512-AL27mt25ACIj6AGcoyS1U5zfOH9Z+0iTuAr+YlFB7bpzdxIIfz1b9pAO+I9xq6F85HA6+nlgb9AEgTg1RToTUw==
+
 "@react-native-community/cli-debugger-ui@^4.9.0":
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-4.9.0.tgz#4177764ba69243c97aa26829d59d9501acb2bd71"
